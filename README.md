@@ -2,7 +2,7 @@
 
 ## Installation
 
-Include `[org.clojars.aidam/roam-alpha-api "0.0.1"]]` in your project.
+Include `[org.clojars.aidam/roam-alpha-api "1.0.2"]]` in your project.
 
 ## Usage
 
@@ -12,7 +12,7 @@ All inputs and outputs are in cljs instead of js (i.e. you don't need to do any 
 
 ## Example
 
-```
+```clojure
 (ns roam-plugin.core
   [:require [roam-alpha-api.data :as d]
             [roam-alpha-api.data.block :as block]

@@ -1,36 +1,33 @@
-# roam-alpha-api
-
-FIXME: description
+# Roam Alpha API ClojureScript wrapper
 
 ## Installation
 
-Download from http://example.com/FIXME.
+Include `[org.clojars.aidam/roam-alpha-api "0.0.1"]]` in your project.
 
 ## Usage
 
-FIXME: explanation
+The namespaces mirror the structure of the roamAlphaAPI JS object.
 
-    $ java -jar roam-alpha-api-0.1.0-standalone.jar [args]
+All inputs and outputs are in cljs instead of js (i.e. you don't need to do any converting).
 
-## Options
+## Example
 
-FIXME: listing of options this app accepts.
+```
+(ns roam-plugin.core
+  [:require [roam-alpha-api.data :as d]
+            [roam-alpha-api.data.block :as block]
+            [roam-alpha-api.ui :refer [get-focused-block]]
+            [roam-alpha-api.util :refer [generate-uid]]])
 
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+(d/q '[:find ... :where ...])
+(block/create {:block {:uid "..."}})
+(get-focused-block)
+(generate-uid)
+```
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

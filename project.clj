@@ -1,4 +1,4 @@
-(defproject org.clojars.aidam/roam-alpha-api "1.0.3"
+(defproject org.clojars.aidam/roam-alpha-api "1.0.4"
   :description "Wraps the roamAlphaAPI JS Object in Roam Research"
   :url "https://roamresearch.com/#/app/developer-documentation/page/tIaOPdXCj"
   :scm {:url "https://github.com/aidam38/roam-alpha-api-cljs-wrapper"}
